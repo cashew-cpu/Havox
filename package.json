@@ -1,0 +1,22 @@
+{
+  "name": "havox",
+  "version": "1.0.0",
+  "description": "Aim assist tool for Minecraft Bedrock Edition",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "minecraft",
+    "bedrock",
+    "aim-assist"
+  ],
+  "author": "cashew-cpu",
+  "license": "MIT",
+  "dependencies": {
+    "robotjs": "^0.6.0",
+    "screenshot-desktop": "^1.12.6",
+    "jimp": "^0.16.1"
+  }
+}
