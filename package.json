@@ -15,7 +15,8 @@
   "author": "cashew-cpu",
   "license": "MIT",
   "dependencies": {
-    "robotjs": "^0.6.0",
+    "ioctl": "^2.0.1",
+    "node-key-sender": "^1.3.2",
     "screenshot-desktop": "^1.12.6",
     "jimp": "^0.16.1"
   }
