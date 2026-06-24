@@ -1,4 +1,3 @@
-const robot = require('robotjs');
 const screenshot = require('screenshot-desktop');
 const Jimp = require('jimp');
 const { KeyboardListener } = require('./src/keyboard');
@@ -24,7 +23,7 @@ mouse.on('left-click', async () => {
 
   try {
     // Get current mouse position (crosshair center)
-    const currentPos = robot.getMousePos();
+    const currentPos = aimAssist.getMousePos();
     
     // Capture screenshot
     const img = await screenshot({ format: 'png' });
@@ -36,7 +35,7 @@ mouse.on('left-click', async () => {
     if (target) {
       // Nudge mouse 5 pixels toward target
       aimAssist.nudgeTowardTarget(currentPos, target, 5);
-      console.log(`[HAVOX] Nudged toward player at (${target.x}, ${target.y})`);
+      console.log(`[HAVOX] Nudged toward player at (${Math.round(target.x)}, ${Math.round(target.y)})`);
     } else {
       console.log('[HAVOX] No player target detected');
     }
